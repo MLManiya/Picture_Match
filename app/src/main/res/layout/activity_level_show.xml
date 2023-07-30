@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Level_Show_Activity"
+    android:verticalScrollbarPosition="right"
+    android:layout_margin="@dimen/_20sdp"
+    android:background="@drawable/border_drawable_shape">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/activity_level_show_textview"
+        android:layout_weight="3"
+        android:text="MATCH 2"
+        android:textStyle="bold"
+        android:textColor="@color/teal_700"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"/>
+
+    <ListView
+        android:id="@+id/activity_level_show_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_20sdp"
+        android:layout_weight="0.5"
+        tools:listitem="@layout/activity_level_show_item_file">
+
+    </ListView>
+</RelativeLayout>

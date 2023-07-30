@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    >
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_game_play_appbar">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/activity_game_play_countdown"
+            android:text="Time:"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        android:id="@+id/activity_game_play_progess_bar"
+        android:maxHeight="@dimen/_10sdp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:outlineAmbientShadowColor="#E60954"
+        android:outlineSpotShadowColor="@color/purple_700"/>
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_450sdp"
+        android:layout_weight="1"
+        android:id="@+id/activity_game_play_gridview"
+        android:numColumns="3"
+        android:layout_margin="@dimen/_10sdp"
+        tools:listitem="@layout/activity_game_play_item_file">
+    </GridView>
+
+</LinearLayout>
